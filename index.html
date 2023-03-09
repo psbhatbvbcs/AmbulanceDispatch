@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>D3.js Graph Example</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+  <h1 id='heading'>Calculate Fastest Route to Patient</h1>
+  <div id="container"></div>
+  <div class='wrapper' id='anim'>
+    <div id="ambulanceres" style='display: block;'>
+      <div class='inputContainer'>
+        <input type="number" id="vertice" placeholder=' Enter number of vertices' />
+      </div>
+      <div class='submitbuttons'>
+        <button class="vert" id="1" value='novertices'>Submit Vertices</button>
+        <div class='ac' id='c'>Enter the details of traffic on connected roads in adjacency matrix form:</div>
+      </div>
+      <textarea class='form-control' id='matdata' name="short_desc"
+        placeholder='  Enter the weights of connected edges in matrix form' required></textarea>
+      <div class='dijisrcdest'>
+        <div class='ac' id='d'>Enter the location of the ambulance:</div>
+        <input type="number" id="source" placeholder='Enter the source' />
+      </div>
+      <div class='submitbuttons'>
+        <button class="vert" id="2" value='submitsrc'>Submit Source</button>
+      </div>
+      <div class='submitbuttons'>
+        <div class='ac' id='e'>Enter the critical condition level of the Patients in order:</div>
+        <textarea class='form-control2' id='prioritypat' name="patpriority"
+          placeholder='Enter the priority of the patients in order' required></textarea>
+        <div class='ac' id='g'>Sort the patients and set destination to their location:</div>
+        <button class="vert" id="7" value='sorter'>|| Sort and Set ||</button>
+        <div class='ac' id='f'></div>
+        <div class='ac' id='priorarr'></div>
+        <div class='ac' id='indarr'></div>
+        <div class='ac' id='a'>1) Submit to get the fastest path to the Patient: </div>
+        <button class="vert" id="4" value='submitmatrix'>|| Submit Matrix ||</button>
+        <div class='ac' id='b'>2) The traffic isn't always the same. Click to see real world scenario: </div>
+        <button class="vert" id="5" value='gentraffic'>|| Generate Traffic ||</button>
+        <button class="vert" id="6" value='updatestatus'>Update Status!</button>
+
+      </div>
+
+      <div class='parent'>
+        <button class='child' id="myButton" style="display: none;">Click Me</button>
+      </div>
+      <div class='1'>
+        <div id='matrix'></div>
+        <div id='ss'>
+          <svg id="graph1" width="1920" height="600"></svg>
+        </div>
+        <div id='path'></div>
+        <div class='ac' id='patientdetails'></div>
+
+      </div>
+    </div>
+    <div class='submitbuttons' id="changer" style="display: none;">
+      <div class='ac' id='e'>Enter the patient name for options:</div>
+      <textarea class='form-control3' id='searchname' name="namesearch" placeholder='Enter Name' required></textarea>
+      <div class='ac' id='g'>|| Search Patient ||</div>
+      <button class="vert" id="1" value='searcher'>|| Search ||</button>
+      <div class='ac' id='searchedpatient'></div>
+      <div id='disroom' style='display: none;'>
+        <button class='vert' id='a' value='getroom'>Get room number</button>
+        <button class='vert' id='b' value='discharge'>Discharge Patient</button>
+      </div>
+      <div class='parent'>
+        <button class='child' id="myButton" style="display: none">Click Me</button>
+      </div>
+      <div class='1'>
+        <div id='ss'>
+          <svg id="graph1" width="1920" height="600"></svg>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <button class='vert' id='change' value='changepage'>Search Patient</button>
+  <script src="scripts/graph.js" defer></script>
+  <script src="scripts/database.js" defer></script>
+</body>
+
+</html>

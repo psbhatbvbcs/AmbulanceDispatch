@@ -1,0 +1,8 @@
+0 1 4 5 7
+1 0 2 10 3
+4 2 0 9 6
+5 10 9 0 8
+7 3 6 8 0
+
+
+"<div class='submitbuttons'><div class='ac' id='e'>Enter the patient name for options:</div><textarea class='form-control2' id = 'searchname' name = 'searchname' placeholder = 'Enter Name' required></textarea><div class='ac' id='g'>|| Search Patient ||</div><button class='vert' id='1' value='searcher'>|| Search ||</button><div class='ac' id='searchedpatient'></div><div class='parent'><button class='child' id='myButton' style='display: none'>Click Me</button></div></div></div>"

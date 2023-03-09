@@ -1,0 +1,50 @@
+* {
+    font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
+    color: black;
+  }
+  
+  body {
+    background: #8990ec;
+  }
+  
+  .wrapper {
+    color: white;
+    background: #272639;
+    border-radius: 1rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .submitbuttons {
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  button {
+    background-color: violet;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #272639;
+    border-radius: 1.4rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+  }
+
+  .ac {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  #a {
+    color:bisque;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  #b {
+    color: bisque;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
