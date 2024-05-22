@@ -1,4 +1,4 @@
-# Visualizing_Real_Time_Patient_Routing_and_Ambulance_Dispatch
+# Ambulance Dispatch
 Visualize Patient routing and Ambulance Dispatch with D3.js, Javascript, HTML, and CSS.
 
 <li>The project takes in input of the number of vertices, a weight adjacency matrix depicting the traffic between the patients on connected roads.
