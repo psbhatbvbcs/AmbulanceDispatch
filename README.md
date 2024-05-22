@@ -11,3 +11,7 @@ Default node of hospital is 0.
 <p>
 <p><li>Provided functionality to search for the admitted patients after picking them up by ambulance. Option to get room number or discharge the patient.
 <p><li>Dicharging removes the patient from the database and can't be searched again.
+
+![Screenshot from 2024-05-22 15-16-35](https://github.com/psbhatbvbcs/AmbulanceDispatch/assets/96832303/15ea752a-26ac-4300-80a1-c4b8dc7ef53a)
+![Screenshot from 2024-05-22 15-16-45](https://github.com/psbhatbvbcs/AmbulanceDispatch/assets/96832303/de0fb90e-9e25-4520-97ab-1199cbd7bdcb)
+![Screenshot from 2024-05-22 15-16-53](https://github.com/psbhatbvbcs/AmbulanceDispatch/assets/96832303/c17f8f71-1df0-4e76-9811-48004485ef20)
